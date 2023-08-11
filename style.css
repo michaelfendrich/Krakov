@@ -17,6 +17,9 @@
     font-family: Preahvihear;
     src: url(fonts/Preahvihear-Regular.ttf);
 }
+html {
+    overflow-y: scroll;
+}
 body {
     margin: 0;
     font-family: Poppins;
@@ -28,6 +31,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+article {
+    padding-top: 70px;
 }
 .name {
     font-family: Borel;
@@ -67,11 +76,13 @@ header {
 }
 article {
     margin: 30px;
+    margin-bottom: 100px;
 }
 .right_float {
     float: right;
     height: 450px;
     margin: 0 40px;
+    padding-top: 20px;
 }
 .left_float {
     float: left;
@@ -110,4 +121,17 @@ article {
 .item:hover {
     box-shadow: 1px 1px 3px #1c2228;
     color: rgb(127, 127, 127);
+}
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    height: 100px;
+    color: white;
+    background: #414042;
+    padding: 50px 0 0 0;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+.small {
+    font-size: 10px;
 }
