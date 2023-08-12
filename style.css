@@ -76,13 +76,14 @@ article {
 }
 article {
     margin: 30px;
-    margin-bottom: 100px;
 }
 .right_float {
     float: right;
-    height: 450px;
     margin: 0 40px;
     padding-top: 20px;
+}
+.bigger_float {
+    height: 450px;
 }
 .left_float {
     float: left;
@@ -95,6 +96,7 @@ article {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px 0;
+    padding-bottom: 40px;
 }
 .item {
     display: flex;
@@ -123,15 +125,30 @@ article {
     color: rgb(127, 127, 127);
 }
 footer {
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
     height: 100px;
     color: white;
     background: #414042;
-    padding: 50px 0 0 0;
+    padding: 40px 0 0 0;
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
-    z-index: 1;
+    bottom: 0;
 }
 .small {
     font-size: 10px;
+}
+.smaller {
+    height: 350px;
+}
+.images_container {
+    margin-top: 50px;
+}
+.images_container > a > img {
+    height: 100px;
+    margin: 0 10px;
+    border: solid 3px black;
+}
+.clearing {
+    clear: both;
 }
